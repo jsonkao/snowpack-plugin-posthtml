@@ -7,5 +7,8 @@
   "dependencies": {
     "posthtml": "^0.15.1",
     "posthtml-load-config": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
