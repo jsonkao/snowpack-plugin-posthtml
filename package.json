@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "name": "@jsonkao/snowpack-plugin-posthtml",
+  "main": "plugin.js",
+  "license": "MIT",
+  "homepage": "https://github.com/jsonkao/snowpack-plugin-posthtml#readme",
+  "dependencies": {
+    "posthtml": "^0.15.1",
+    "posthtml-load-config": "^2.0.0"
+  }
+}
