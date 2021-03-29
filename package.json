@@ -1,6 +1,7 @@
 {
   "version": "0.3.1",
   "name": "@jsonkao/snowpack-plugin-posthtml",
+  "description": "Adds PostHTML support to any Snowpack project. Refreshes page automatically on configuration change.",
   "main": "plugin.js",
   "license": "MIT",
   "homepage": "https://github.com/jsonkao/snowpack-plugin-posthtml#readme",
