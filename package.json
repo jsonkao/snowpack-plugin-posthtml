@@ -10,5 +10,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "keywords": ["snowpack", "posthtml", "snowpack-plugin"]
 }
