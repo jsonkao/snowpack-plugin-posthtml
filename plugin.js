@@ -3,7 +3,7 @@ const posthtmlrc = require('posthtml-load-config');
 const path = require('path');
 
 // TODO: track where roots are in PostHTML config; update HTMLs accordingly
-const roots = Set();
+// const roots = new Set();
 
 module.exports = function (snowpackConfig, { root = process.cwd(), ctx, path: postPath, options }) {
   return {
