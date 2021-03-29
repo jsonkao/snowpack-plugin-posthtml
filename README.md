@@ -32,6 +32,14 @@ PostHTML configuration works out of the box. The following plugin options help w
 | Name   |              Type              | Description                                                   |
 | :----- | :----------------------------: | :------------------------------------------------------------ |
 | `root` |       `string, string[]`       | Specify the directories in which the HTML should be reloaded on configuration change |
-| `ctx`  | | `ctx` argument passed to [`posthtml-load-config`](https://github.com/posthtml/posthtml-load-config/blob/master/index.js#L14) |
-| `path`  | | `path` argument passed to [`posthtml-load-config`](https://github.com/posthtml/posthtml-load-config/blob/master/index.js#L14) |
-| `options`  | | `options` argument passed to [`posthtml-load-config`](https://github.com/posthtml/posthtml-load-config/blob/master/index.js#L14) |
+| `configOptions.*` | `object` | Pass [`posthtml-load-config` options](https://github.com/posthtml/posthtml-load-config/blob/master/index.js#L14) directly to the loader (see `configOptions`).
+
+## `configOptions`
+
+These options are passed directtly into the main [`posthtml-load-config` function](https://github.com/posthtml/posthtml-load-config/blob/master/index.js#L14). They may be helpful, for instance, if your PostHTML configuration is not in your application's root directory.
+
+| Name   |              Type              | Description                                                   |
+| :----- | :----------------------------: | :------------------------------------------------------------ |
+| `ctx`  | `object` | The context [evaluated while](https://github.com/posthtml/posthtml-load-config#context) loading your config |
+| `path`  | `string` | Path in which I should look for your config |
+| `options`  | `object` | Options passed directly to [`cosmiconfig`](https://github.com/davidtheclark/cosmiconfig#cosmiconfigoptions) |
