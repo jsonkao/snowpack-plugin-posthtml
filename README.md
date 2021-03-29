@@ -16,7 +16,7 @@ Then add the plugin to your Snowpack config:
 module.exports = {
   plugins: [
     [
-      '@snowpack/plugin-sass',
+      '@jsonkao/snowpack-plugin-posthtml',
       {
         /* see options below */
       },
@@ -31,7 +31,7 @@ PostHTML configuration works out of the box. The following plugin options help w
 
 | Name   |              Type              | Description                                                   |
 | :----- | :----------------------------: | :------------------------------------------------------------ |
-| `root` |       `string, string[]`       | Specify the directories in which the HTML should be reloaded on configuration change |
+| `root` |       `string, string[]`       | Specify the local directories in which the HTML should be reloaded on configuration change |
 | `configOptions.*` | `object` | Pass [`posthtml-load-config` options](https://github.com/posthtml/posthtml-load-config/blob/master/index.js#L14) directly to the loader (see `configOptions`).
 
 ## `configOptions`
