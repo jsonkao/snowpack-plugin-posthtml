@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "name": "@jsonkao/snowpack-plugin-posthtml",
   "main": "plugin.js",
   "license": "MIT",
@@ -11,5 +11,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["snowpack", "posthtml", "snowpack-plugin"]
+  "keywords": [
+    "snowpack",
+    "posthtml",
+    "snowpack-plugin"
+  ]
 }
